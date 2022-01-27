@@ -1,0 +1,24 @@
+{
+  "name": "vhess",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MorphinIO/Vhess.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MorphinIO/Vhess/issues"
+  },
+  "homepage": "https://github.com/MorphinIO/Vhess#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "yarn": "^1.22.17"
+  }
+}
