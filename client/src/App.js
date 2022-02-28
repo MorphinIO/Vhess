@@ -1,6 +1,8 @@
-import logo from './logo.svg';
+//import React from 'react';
+//import logo from './logo.svg';
 import './App.css';
 
+/*
 function App() {
   return (
     <div className="App">
@@ -18,6 +20,24 @@ function App() {
           Learn React
         </a>
       </header>
+    </div>
+  );
+}*/
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <p id="logo">Unique Chess</p> 
+        <div className="Links">
+          <p>Feedback</p>
+          <p>Play</p>
+          <p>About</p>
+        </div>
+      </header>
+      <p id="bodytext">
+        Play all your favorite chess variants-- with AI or with another human player! 
+      </p>
     </div>
   );
 }

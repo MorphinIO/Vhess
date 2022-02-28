@@ -15,17 +15,26 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  min-height: 10vh;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#logo {
+  float: left;
+  padding-left: 20px;
+}
+
+#bodytext {
+  font-size: calc(10px + 2vmin);
+  justify-content: center;
+}
+
+.Links p {
+  font-size: calc(10px + 1vmin);
+  float: right;
+  padding-top: 15px;
+  padding-right: 80px;
 }
 
 @keyframes App-logo-spin {
