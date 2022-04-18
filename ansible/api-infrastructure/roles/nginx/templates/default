@@ -1,0 +1,8 @@
+server {
+   listen 80 default_server;
+   root /var/www/vhess/dist;
+   server_name 157.245.126.45;
+   index index.html;
+   location / {
+    }
+}

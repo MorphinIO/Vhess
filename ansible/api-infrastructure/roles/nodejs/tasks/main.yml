@@ -1,0 +1,30 @@
+---
+- name: Download yarn repo key
+  get_url:
+    url: https://dl.yarnpkg.com/debian/pubkey.gpg
+    dest: /tmp/yarn-pubkey.gpg
+
+- name: add yarn repo key
+  shell: apt-key add /tmp/yarn-pubkey.gpg
+
+- name: Add Yarn package repo
+  shell: echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+
+- name: Download nvm
+  get_url:
+    url: https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh 
+    dest: /tmp/nvm-install.sh
+
+- name: install nvm
+  shell: bash /tmp/nvm-install.sh
+
+- name: Install node using the nvm command and set it as default
+  shell: "source /root/.nvm/nvm.sh && nvm install 14.10.0 && nvm run 14.10.0 --version && nvm alias default 14.10.0"
+  args:
+    executable: /bin/bash
+
+- name: Install Yarn
+  apt:
+    name: yarn
+    update_cache: yes
+    state: latest

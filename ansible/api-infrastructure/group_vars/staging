@@ -1,0 +1,10 @@
+---
+# Variables listed here are applicable to the development host group
+# node_src_tar is the absolute path to the project repo + 'api.tar.gz'
+main_node_src_tar: /Users/morfin/Documents/Whitelabel/vhess/main.tar.gz # i.e. /Users/morfin/Documents/Whitelabel/vhess/api.tar.gz
+main_node_dest: /var/www/vhess
+node_version: 16.13.2
+
+nginx_public_port: 80
+nginx_private_port: 8080
+nginx_server_name: vhess.pro

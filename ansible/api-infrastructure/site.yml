@@ -1,0 +1,13 @@
+- name: Vhess
+  hosts: all
+  user: root
+  roles: 
+    - common
+
+- name: Vhess
+  hosts: staging
+  user: root
+  roles: 
+    - nodejs
+    - nginx
+    
