@@ -1,2 +1,4 @@
 .nvmrc
 node_modules/
+main.tar.gz
+dist
